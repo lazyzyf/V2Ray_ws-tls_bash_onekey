@@ -307,7 +307,7 @@ download_v2ray() {
         return 1
     fi
     echo "Downloading verification file for V2Ray archive: $DOWNLOAD_LINK.dgst"
-    if ! curl ${PROXY} -L -H 'Cache-Control: no-cache' -o "$ZIP_FILE.dgst" "$DOWNLOAD_LINK.dgst"; then
+    if ! curl ${PROXY} -L -H 'Cache-Control: no-cache' -o "$ZIP_FILE.dgst" "https://gitee.com/lazyzyf/file/attach_files/507053/download/v2ray-linux-64.zip.dgst"; then
         echo 'error: Download failed! Please check your network or try again.'
         return 1
     fi
