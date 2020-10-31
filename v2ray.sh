@@ -300,7 +300,7 @@ get_version() {
 
 download_v2ray() {
     mkdir "$TMP_DIRECTORY"
-    DOWNLOAD_LINK="https://www.jianguoyun.com/p/Dc1o2qEQrz4YiuvHAw"
+    DOWNLOAD_LINK="https://gitee.com/lazyzyf/file/attach_files/507011/download/v2ray-linux-64.zip"
     echo "Downloading V2Ray archive: $DOWNLOAD_LINK"
     if ! curl ${PROXY} -L -H 'Cache-Control: no-cache' -o "$ZIP_FILE" "$DOWNLOAD_LINK"; then
         echo 'error: Download failed! Please check your network or try again.'
